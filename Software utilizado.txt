@@ -1,0 +1,28 @@
+1.- Deben instalar el java JDK 20
+https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe
+
+2.- Luego deben instalar Apache netbeans 17
+https://dlcdn.apache.org/netbeans/netbeans-installers/17/Apache-NetBeans-17-bin-windows-x64.exe
+
+3.- Luego deben de instalar el plugin de SpringBoot
+https://plugins.netbeans.apache.org/catalogue/download/175/nb-springboot-plugin-3.1.nbm
+
+4.- Luego van a descargar Postman
+https://dl.pstmn.io/download/latest/win64
+
+5.- Luego pues instalan Oracle 12c (Solo si no lo tienen xd) siguen los pasos del pdf(Segundo link) 
+https://tolucatecnm-my.sharepoint.com/personal/pmonterrosasc_toluca_tecnm_mx/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpmonterrosasc%5Ftoluca%5Ftecnm%5Fmx%2FDocuments%2FA%20%2D%20Software%20Admon%20BD%20%2D%20Windows%20%2D%202023%2FGestorBaseDatos%2Fwinx64%5F12201%5Fdatabase%2Erar&parent=%2Fpersonal%2Fpmonterrosasc%5Ftoluca%5Ftecnm%5Fmx%2FDocuments%2FA%20%2D%20Software%20Admon%20BD%20%2D%20Windows%20%2D%202023%2FGestorBaseDatos&ct=1682396993357&or=OWA%2DNT&cid=0fdc1d64%2Ded21%2Dbd1b%2D5bc4%2Da593532e12ca&ga=1
+https://tolucatecnm-my.sharepoint.com/personal/pmonterrosasc_toluca_tecnm_mx/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpmonterrosasc%5Ftoluca%5Ftecnm%5Fmx%2FDocuments%2FA%20%2D%20Software%20Admon%20BD%20%2D%20Windows%20%2D%202023%2FGestorBaseDatos%2FImagenes%20proceso%20de%20Instalacion%20Base%20de%20Datos%2012c%2Epdf&parent=%2Fpersonal%2Fpmonterrosasc%5Ftoluca%5Ftecnm%5Fmx%2FDocuments%2FA%20%2D%20Software%20Admon%20BD%20%2D%20Windows%20%2D%202023%2FGestorBaseDatos&ga=1
+
+6.- Luego pues descargan el Gestor DBeaver (Opcional)
+https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe
+
+7.- Luego instalan Visual Studio Code
+https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+
+8.- Luego instalan Node.js
+https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi
+
+Y creo que es todo bueno hagán lo del archivo crear Api en Sprinboot y React (SOLO LO DE REACT, ESO SE HACE
+EN LA TERMINAL DE VISUAL STUDIO CODE) y Crean el usuario HOUSEVAK en la base de datos, con contraseña de PASS123.
+OBVIO EN LA CLASE SPRINGAPLICATION CAMBIAN EL NOMBRE DE LA BASE ORCLJONATHAN12C AL NOMBRE DE SU BASE

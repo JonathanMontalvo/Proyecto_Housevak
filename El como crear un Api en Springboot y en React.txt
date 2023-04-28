@@ -1,0 +1,7 @@
+//En SpringBoot vamos a usar Spring initializr.
+https://start.spring.io/
+
+//En React vamos a usar: (ESTE SI LO TIENEN QUE HACER y luego ya borran la carpeta y los archivos, 
+debido a que les va a instalar paquetes que no tienen en su Pc).
+npx create-react-app housevak_frontend
+

@@ -1,0 +1,53 @@
+---Insertar
+localhost:8080/usuarios/registro
+{
+        "usuario": "JONATHAN._.MP_7",
+        "correo": "L20280717@TOLUCA.TECNM.MX",
+        "contrasenia": "1q2W3E4R5t6",
+        "nombre": "JONATHAN",
+        "apellido_paterno": "MONTALVO",
+        "apellido_materno": "PÉREZ",
+        "fecha_nacimiento": "09/08/02",
+        "genero": "H",
+        "telefono": "+52-729-765-4321",
+        "direccion": "Av Tecnol¢gico 100-s/n, AGRÖCOLA",
+        "ciudad": "METEPEC",
+        "estado": "ESTADO DE MÉXICO",
+        "pais": "MXICO",
+        "codigo_postal": "52149",
+        "imagen_perfil": "https://drive.google.com/file/d/1ANXZ8gXBpGxKbxpzQiMqyfXzWlMZEdNl/view?usp=share_link",
+        "fecha_registro": "24/04/23",
+        "rol_usuario": "A"
+}
+
+---Consultar todos los usuarios
+http://localhost:8080/usuarios/users
+
+---Editar un usuario
+localhost:8080/usuarios/actualizar
+{
+        "id": 38,
+        "usuario": "JONATHAN._.MP_79",
+        "correo": "L20280717@TOLUCA.TECNM.MX",
+        "contrasenia": "1q2W3E4R5t6",
+        "nombre": "JONATHAN",
+        "apellido_paterno": "MONTALVO",
+        "apellido_materno": "PÉREZ",
+        "fecha_nacimiento": "09/08/02",
+        "genero": "H",
+        "telefono": "+52-729-765-4321",
+        "direccion": "Av Tecnol¢gico 100-s/n, AGRÖCOLA",
+        "ciudad": "METEPEC",
+        "estado": "ESTADO DE MÉXICO",
+        "pais": "MXICO",
+        "codigo_postal": "52149",
+        "imagen_perfil": "https://drive.google.com/file/d/1ANXZ8gXBpGxKbxpzQiMqyfXzWlMZEdNl/view?usp=share_link",
+        "fecha_registro": "24/04/23",
+        "rol_usuario": "A"
+}
+
+---Borrar un usuario
+localhost:8080/usuarios/borrar/38
+
+---Buscar por id a un usuario
+http://localhost:8080/usuarios/35
