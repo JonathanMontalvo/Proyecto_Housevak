@@ -1,0 +1,36 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.conteiner{
+    max-width: 1140px;
+    width: 250px;
+    padding-inline: 1.2rem;
+    margin: 0 auto;
+}
+.conteiner2{
+    max-width: 1140px;
+    width: 250px;
+    margin: 0 auto;
+}
+.datos{
+    width: 280px;
+    margin: 0 auto;
+}
+.datos > div{
+    height: 120px;
+   color:brown;
+    margin: 20px -240px;
+}
+.Inicio{
+    height: 120;
+    margin: 50px 100px;
+}
+.Texto {
+    height: 200px;
+    width: 200px;
+    margin:-400px 900px;
+}

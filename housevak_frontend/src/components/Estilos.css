@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,800&display=swap');
+
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background: lawngreen;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    max-width: 800px;
+    width: auto;
+    padding: 80px; 
+}

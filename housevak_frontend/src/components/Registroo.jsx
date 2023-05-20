@@ -1,4 +1,4 @@
-import React from "react";
+import  "./Estilos.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
@@ -10,6 +10,9 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import { FormHelperText } from "@mui/material";
 import {Link } from 'react-router-dom';
+import { useState } from "react";
+import './Regis.css';
+import { SettingsSuggestSharp } from '@mui/icons-material';
 
 const estados_mexico = [
     { value: "Aguascalientes", label: "Aguascalientes" },
@@ -103,7 +106,6 @@ value: "12",
 label: "Diciembre",
 },
 ];
-
 const max = new Date().getFullYear();
 const min = 1930;
 const years = [];
@@ -115,11 +117,29 @@ label: year,
 });
 }
 
-export default function Registro() {
-return (
-<>
-<h1>Registro</h1>
+const Registroo = ()  => {
+    const[nombre,setNombre]=useState('');
+    const[apellido,setApellido]=useState('');
+    const[usuarior,setUsuarior]=useState('');
+    const[contrasenia,setContrasenia]=useState('');
+    const[contrasenia2,setContrasenia2]=useState('');
+    const[dir,setDir]=useState('');
+    const[num,setNum]=useState('');
+    const[city,setCity]=useState('');
+    const[cp,setCp]=useState('');
+    const[correo,setCorreo]=useState('');
+    const errorMessage = validate(usuarior,correo,contrasenia,contrasenia2,dir,num,city,cp);
+    return(
+        <>
+        <div className="conteiner2">
+        <h1>Registro</h1>
+        </div>
+        <div className="conteiner">
 <Box
+ onSubmit={ev => {
+    ev.preventDefault();
+    login2(usuarior,correo,contrasenia);
+    }}
 component="form"
 sx={{
 "& .MuiTextField-root": { m: 1, width: "25ch" },
@@ -128,11 +148,11 @@ noValidate
 autoComplete="off"
 >
 <div>
-<TextField id="outlined-basic" label="Nombre" variant="outlined" />
-<TextField id="outlined-basic" label="Apellido" variant="outlined" />
+<TextField id="outlined-basic" label="Nombre" variant="outlined" name='nombre' value={nombre} onChange={ev=> setNombre(ev.target.value)} />
+<TextField id="outlined-basic" label="Apellido" variant="outlined"  name='apellido' value={apellido} onChange={ev=> setApellido(ev.target.value)} />
 </div>
 <div>
-<TextField id="outlined-basic" label="Usuario" variant="outlined" />
+<TextField id="outlined-basic" label="Usuario" variant="outlined" name='usuarior' value={usuarior} onChange={ev=> setUsuarior(ev.target.value)} />
 </div>
 <div>
 <TextField
@@ -140,6 +160,9 @@ id="outlined-basic"
 label="Correo electrónico"
 type="email"
 variant="outlined"
+name='correo' 
+value={correo} 
+onChange={ev=> setCorreo(ev.target.value)}
 />
 </div>
 <div>
@@ -148,12 +171,18 @@ id="outlined-basic"
 label="Contraseña"
 type="password"
 variant="outlined"
+name='contrasenia' 
+value={contrasenia} 
+onChange={ev=> setContrasenia(ev.target.value)}
 />
 <TextField
 id="outlined-basic"
 label="Confirmación"
 type="password"
 variant="outlined"
+name='confirmacion'
+value={contrasenia2} 
+onChange={ev=> setContrasenia2(ev.target.value)}
 />
 <FormHelperText sx={{ m: 1, width: "75ch" }}>
 Usa 8 o más caracteres con una combinación de letras, <br></br>
@@ -212,12 +241,14 @@ name="row-radio-buttons-group"
 </FormControl>
 </div>
 <div>
-<TextField id="outlined-basic" label="Direccion" variant="outlined" />
-<TextField id="outlined-basic" label="Telefono" variant="outlined" />
+<TextField id="outlined-basic" label="Direccion" variant="outlined" 
+name="dir" 
+value={dir} onChange={ev=> setDir(ev.target.value)} />
+<TextField id="outlined-basic" label="Telefono" variant="outlined" name="num" value={num} onChange={ev=> setNum(ev.target.value)} />
 </div>
 <div>
-<TextField id="outlined-basic" label="Ciudad" variant="outlined" />
-<TextField id="outlined-basic" label="Codigo Postal" variant="outlined" />
+<TextField id="outlined-basic" label="Ciudad" variant="outlined" name="city" value={city} onChange={ev=> setCity(ev.target.value)}/>
+<TextField id="outlined-basic" label="Codigo Postal" variant="outlined"name="cp" value={cp} onChange={ev=> setCp(ev.target.value)} />
 </div>
 <TextField
 id="outlined-select-currency"
@@ -244,13 +275,32 @@ defaultValue="Mexico"
 ))}
 </TextField>
 <div>
-  <Link to="/Catalogo">
-<Button type="submit" variant="contained" sx={{ mt: 2 }}>
+  <Link to="Inicio">
+<Button type="submit" variant="contained" sx={{ mt: 2 }} disabled={errorMessage}>
 Registrarte
 </Button>
 </Link>
 </div>
 </Box>
-</>
-);
+        </div> 
+        </>
+               
+    )
 }
+const login2=(usuarior,correo,contrasenia)=>{
+    if(usuarior !=='' && correo !=='' && contrasenia!=='')
+    <Link to="Registro/home"></Link>
+    else alert('creacion incorrecta');
+    };
+    const validate=(usuarior,correo,contrasenia,contrasenia2,dir,num,city,cp)=>{
+        if(usuarior.length<13) return 'Usuario no aceptado';
+        if(!correo.includes('@')) return 'Email no aceptado';
+        if(contrasenia.length<11) return 'Contraseña no aceptado';
+        if(contrasenia2!==contrasenia) return 'la Contraseña no coinciden';
+        if(dir.length<20) return 'direccion no valida';
+        if(num.length<20 && num.includes('a')) return'numero no valido';
+        if(city==='') return 'poner una ciudad'; 
+        if (cp.length>6) return 'poner bien el codigo postal';
+        }
+
+export default Registroo

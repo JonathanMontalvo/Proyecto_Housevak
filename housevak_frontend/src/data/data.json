@@ -1,0 +1,63 @@
+
+[
+    {
+        "id": 1,
+        "title":"Villa Serenidad",
+        "imagen": "https://cdn5.dibujos.net/dibujos/pintados/202040/casita-de-campo-edificios-casas-12018205.jpg",
+        "price": 29859834,
+        "categoria":"Venta",
+        "description":"Es comoda e moderna ",
+        "descriptionlarge":"Construida con materiales de calidad, esta casa cuenta con una variedad de habitaciones, incluyendo amplios dormitorios, acogedoras salas de estar, una cocina funcional y baños modernos. Cada espacio ha sido cuidadosamente diseñado para facilitar el flujo y la circulación, brindándote un hogar cómodo y agradable. Además, podrás disfrutar de un espacio exterior privado, perfecto para reuniones familiares o momentos de relajación. Ya sea que desees disfrutar de un jardín, una terraza o incluso una piscina, esta casa ofrece la opción de crear un espacio al aire libre a tu medida.Con sistemas eléctricos, de plomería y de climatización actualizados, esta casa garantiza tu comodidad y bienestar en todo momento. Además, su ubicación conveniente te brinda acceso a servicios y comodidades cercanas, como tiendas, restaurantes y áreas recreativas.No pierdas la oportunidad de adquirir esta maravillosa casa que ofrece un estilo de vida confortable y tranquilo. ¡Ven a visitarla y haz de esta casa tu nuevo hogar!",
+        "urls":"https://www.youtube.com/watch?v=oLwmce0oHUk"
+    },
+    {
+        "id": 2,
+        "title":"Casa Bella Vista",
+        "imagen":"https://img10.naventcdn.com/avisos/18/00/64/57/85/31/720x532/325323049.jpg",
+        "price": 438325674,
+        "categoria":"Renta",
+        "description":"Moderna e segura",
+        "descriptionlarge":"La planta baja alberga una cocina gourmet, equipada con electrodomésticos de última generación, perfecta para deleitar a tus invitados con deliciosas creaciones culinarias. Además, cuenta con una sala de estar espaciosa y cómoda, ideal para relajarte o disfrutar de momentos de entretenimiento.Los dormitorios principales en el nivel superior ofrecen un oasis de tranquilidad, con amplios espacios para descansar y recargar energías. Los baños, con acabados exquisitos y detalles de lujo, te brindarán una experiencia de spa en la comodidad de tu hogar.No podemos dejar de mencionar el magnífico espacio al aire libre que esta propiedad tiene para ofrecer. Un jardín meticulosamente cuidado, con una terraza cubierta para disfrutar de comidas al aire libre y un área de juegos para los más pequeños de la familia. Además, una piscina reluciente te invita a sumergirte y disfrutar del sol durante los días más cálidos.",
+        "urls":"https://www.youtube.com/watch?v=gGKwMMALLLI"
+    },
+    {
+        "id": 3,
+        "title":"Rincón del Paraíso",
+        "imagen":"https://i.pinimg.com/originals/7b/bd/b7/7bbdb7f93d11bbcf81633ecfa725d402.jpg",
+        "price": 6733514,
+        "categoria":"Venta",
+        "description":"Antigua y segura",
+        "descriptionlarge":"Los interiores luminosos y espaciosos están elegantemente decorados con acabados de alta calidad, brindándote una sensación de lujo en cada rincón. La cocina gourmet y la sala de estar amplia son ideales para el entretenimiento y el disfrute diario.Los dormitorios principales en el nivel superior te brindan un santuario tranquilo para descansar, mientras que los baños lujosos te permiten relajarte como si estuvieras en un spa.El espacio al aire libre bien cuidado cuenta con una terraza cubierta y una piscina reluciente, creando un oasis perfecto para disfrutar de la vida al aire libre.Con características adicionales como un garaje espacioso y un sistema de seguridad de última generación, esta propiedad te ofrece comodidad y tranquilidad.Ubicada en un vecindario exclusivo con excelentes comodidades cercanas, esta casa es una oportunidad que no puedes dejar pasar.",
+        "urls":"https://www.youtube.com/watch?v=BBKR5TkR_ec"
+    },
+    {
+        "id": 4,
+        "title":"Hacienda Esperanza",
+        "imagen":"https://definicion.de/wp-content/uploads/2011/01/casa-1.jpg",
+        "price": 2986734,
+        "categoria":"Venta",
+        "description":"Robusta e compleja",
+        "descriptionlarge":"La cocina bien equipada y la sala de estar acogedora son perfectas para recibir a familiares y amigos. Los dormitorios principales ofrecen un refugio tranquilo, mientras que los baños modernos añaden un toque de lujo a tu vida diaria.El espacio exterior es un oasis privado con un jardín exquisito y una terraza donde podrás relajarte y disfrutar del aire libre. Completa tu experiencia con un refrescante chapuzón en la piscina brillante.Además, la casa cuenta con un garaje espacioso y un sistema de seguridad confiable para tu tranquilidad.Ubicada en un vecindario deseable con acceso a servicios y comodidades cercanas, esta propiedad es una oportunidad que no puedes dejar pasar.",
+        "urls":"https://www.youtube.com/watch?v=QmfVLaBan5I"
+    },
+    {
+        "id": 5,
+        "title":"Manor Élegance",
+        "imagen":"https://i.redd.it/leoihj2ud0841.jpg",
+        "price": 43456834,
+        "categoria":"Renta",
+        "description":"Sorprendete casa para toda la familia",
+        "descriptionlarge":"La cocina gourmet y la sala de estar te invitan a disfrutar de momentos inolvidables con tus seres queridos. Los dormitorios principales ofrecen un refugio tranquilo, mientras que los baños modernos añaden un toque de estilo.Disfruta del aire libre en el impresionante espacio exterior con un jardín bien cuidado y una terraza perfecta para relajarte. Sumérgete en la piscina para refrescarte y disfrutar del sol.Con un garaje amplio y un sistema de seguridad de primera clase, esta propiedad te brinda comodidad y tranquilidad en todo momento.Ubicada en una ubicación privilegiada cerca de comodidades y servicios, esta casa representa una oportunidad única.",
+        "urls":"https://www.youtube.com/watch?v=LD0inr69HEU"
+    },
+    {
+        "id": 6,
+        "title":"Residencia Bella Luna",
+        "imagen":"https://www.bhg.com/thmb/3Vf9GXp3T-adDlU6tKpTbb-AEyE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg",
+        "price": 6234734,
+        "categoria":"Renta",
+        "description":"Para cumplir tus sueños",
+        "descriptionlarge":"La cocina moderna y la sala de estar espaciosa son ideales para recibir a tus invitados. Los dormitorios principales te ofrecen un oasis de tranquilidad, mientras que los baños elegantes te permiten relajarte y rejuvenecer.Disfruta del aire libre en el exquisito espacio exterior con un jardín bien cuidado y una terraza perfecta para momentos de relajación. Refréscate en la piscina y disfruta del sol en los días cálidos.Con un garaje amplio y un sistema de seguridad confiable, esta propiedad ofrece comodidad y tranquilidad.Ubicada en una ubicación conveniente con acceso a comodidades cercanas, esta casa es una oportunidad que no puedes dejar pasar.",
+        "urls":"https://www.youtube.com/watch?v=XdNWoln_Y2g"
+    }
+]

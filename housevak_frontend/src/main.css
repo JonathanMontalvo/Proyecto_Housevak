@@ -1,0 +1,118 @@
+.App{
+    background:rgba(181, 243, 152, 0.866);
+    height: 150vh;
+    background:linear-gradient(
+     180deg,
+     rgb(255, 255, 255) 0%,
+     rgb(253, 254, 255) 15%,
+     rgb(240, 240, 240) 30%,
+     rgb(242, 249, 255) 45%,
+     rgb(235, 224, 251) 100%
+    ) ;
+ }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1140px;
+    padding-inline: 1.5rem;
+    margin: 0 auto;
+}
+.main-title {
+    margin-top: 2rem;
+}
+.navbar {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: paleturquoise;
+    border-bottom: 3px solid black;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+.inmuebles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
+}
+.inmueble {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.inmueble > div {
+    padding: 1rem;
+    background-color:#75e8ff;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.inmueble > img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+.inmueble .ver-mas {
+    text-decoration: none;
+    background-color: rgba(43, 91, 202, 0.849);
+    color: rgba(255, 255, 41, 0.658);
+    padding: .5rem;
+    width: max-content;
+    border-radius: .5rem;
+    transition: .2s;
+}
+
+.inmueble .ver-mas:hover {
+    background-color: black;
+    color: rgba(119, 77, 40, 0.818);
+}
+
+.inmueble-detalle {
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.inmueble-detalle img {
+    width: 100%;
+}
+
+.inmueble-detalle-info h3 {
+    font-size: 2rem;
+}
+
+.precio {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+
+
