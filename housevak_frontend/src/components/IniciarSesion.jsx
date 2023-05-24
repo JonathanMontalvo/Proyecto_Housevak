@@ -80,7 +80,7 @@ Ingresar
 }
 const login=(user,email,password)=>{
     if(user ==='JONATHAN._.MP' && email==='L20280711@TOLUCA.TECNM.MX' && password==='1q2W3E4R5t6')
-    <Link to="/Catalogo"></Link>
+    <Link to="/Inicio"></Link>
     else alert('Login incorrecto');
     };
 const validate=(user,email,password)=>{

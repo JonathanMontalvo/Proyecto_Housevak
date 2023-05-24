@@ -27,7 +27,7 @@ function App(){
     <Route path="/" element={<Escoger/>} />
       <Route path="iniciosesion/inicio/Catelog" element={<ConNav/>} />
       <Route path="iniciosesion/inicio" element={<ConNavInc/>} />
-      <Route path="iniciosesion/Catelog/perfil" element={<ConNavUs/>} />
+      <Route path="iniciosesion/inicio/perfil" element={<ConNavUs/>} />
       <Route path="Registro/Catelog" element={<ConNav/>} />
       <Route path="Registro/Inicio" element={<ConNavInc/>} />
       <Route path="/Usuario" element={<Usuario/>} />

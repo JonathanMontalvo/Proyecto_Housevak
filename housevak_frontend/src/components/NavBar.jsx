@@ -10,7 +10,7 @@ const NavBar = () =>{
                 <li><Link className='menu-link' to='/iniciosesion/inicio/Catelog/Renta'>Renta</Link></li>
                 <li><Link className='menu-link' to='/iniciosesion/inicio/Catelog/Venta'>Venta</Link></li>
                 <li><Link className='menu-link' to='#'>Nosotros</Link></li>
-                <li><Link className='menu-link' to='/iniciosesion/home/perfil'>Perfil</Link></li>
+                <li><Link className='menu-link' to='/iniciosesion/inicio/perfil'>Perfil</Link></li>
             </ul>
         </nav>
     )
