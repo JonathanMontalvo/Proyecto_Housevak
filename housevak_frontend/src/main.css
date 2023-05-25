@@ -68,7 +68,7 @@
 }
 .inmueble > div {
     padding: 1rem;
-    background-color:#75e8ff;
+    background-color:#e9e9e9;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -80,7 +80,7 @@
 }
 .inmueble .ver-mas {
     text-decoration: none;
-    background-color: rgba(43, 91, 202, 0.849);
+    background-color: rgb(94, 94, 95);
     color: rgba(255, 255, 41, 0.658);
     padding: .5rem;
     width: max-content;
