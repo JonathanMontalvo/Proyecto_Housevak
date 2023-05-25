@@ -14,6 +14,7 @@ import { useState } from "react";
 import './Regis.css';
 import { SettingsSuggestSharp } from '@mui/icons-material';
 
+
 const estados_mexico = [
     { value: "Aguascalientes", label: "Aguascalientes" },
     { value: "Baja California", label: "Baja California" },
@@ -106,6 +107,10 @@ value: "12",
 label: "Diciembre",
 },
 ];
+const initailForm = {
+  id: null,
+  name: "",
+};
 const max = new Date().getFullYear();
 const min = 1930;
 const years = [];
@@ -117,7 +122,35 @@ label: year,
 });
 }
 
-const Registroo = ()  => {
+const Registroo = ({createData,updateData,datatoEdit,setDataToEdit})  => {
+  const [form, setForm] = useState(initailForm);
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!form.name ) {
+      alert("Datos incompletos");
+      return;
+    }
+
+    if (form.id === null) {
+      createData(form);
+    } else {
+      updateData(form);
+    }
+    handleReset();
+  };
+  const handleReset = (e) => {
+    setForm(initailForm);
+    setDataToEdit(null);
+  };
+
+
     const[nombre,setNombre]=useState('');
     const[apellido,setApellido]=useState('');
     const[usuarior,setUsuarior]=useState('');
@@ -135,20 +168,29 @@ const Registroo = ()  => {
         <h1>Registro</h1>
         </div>
         <div className="conteiner">
-<Box
+<Box 
  onSubmit={ev => {
-    ev.preventDefault();
-    login2(usuarior,correo,contrasenia);
+  ev.preventDefault();
+
+  if (!form.name ) {
+    alert("Datos incompletos");
+    return;
+  }
+
+  if (form.id === null) {
+    createData(form);
+  } else {
+    updateData(form);
+  }
     }}
 component="form"
 sx={{
 "& .MuiTextField-root": { m: 1, width: "25ch" },
 }}
 noValidate
-autoComplete="off"
->
+autoComplete="off">
 <div>
-<TextField id="outlined-basic" label="Nombre" variant="outlined" name='nombre' value={nombre} onChange={ev=> setNombre(ev.target.value)} />
+<TextField id="outlined-basic" label="Nombre" variant="outlined" name='nombre' value={nombre} onChange={handleChange} />
 <TextField id="outlined-basic" label="Apellido" variant="outlined"  name='apellido' value={apellido} onChange={ev=> setApellido(ev.target.value)} />
 </div>
 <div>
@@ -275,11 +317,9 @@ defaultValue="Mexico"
 ))}
 </TextField>
 <div>
-  <Link to="Inicio">
-<Button type="submit" variant="contained" sx={{ mt: 2 }} disabled={errorMessage}>
+<Button type="submit" variant="contained" sx={{ mt: 2 }} onClick={handleReset}>
 Registrarte
 </Button>
-</Link>
 </div>
 </Box>
         </div> 
