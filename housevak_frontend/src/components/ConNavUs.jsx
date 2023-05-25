@@ -1,13 +1,12 @@
-import React from 'react'
-import NavBar from './NavBar'
-import Usuario from './Usuario'
+import React from "react";
+import ResponsiveAppBar from "./Barra";
+import Usuario from "./Usuario";
 
-export default function ConNavUs(){
-    return(
-        <div>
-            <NavBar/>
-        <Usuario/>
-        </div>
-        
-    )
-    }
+export default function ConNavUs() {
+  return (
+    <div>
+      <ResponsiveAppBar />
+      <Usuario />
+    </div>
+  );
+}
