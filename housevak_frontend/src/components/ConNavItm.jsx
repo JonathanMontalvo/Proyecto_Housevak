@@ -1,12 +1,11 @@
-import React from 'react'
-import NavBar from './NavBar'
-import ItemDetailContainer from  './ItemDetailContainer'
-export default function ConNavItm(){
-    return(
-        <div>
-            <NavBar/>
-        <ItemDetailContainer/>
-        </div>
-        
-    )
-    }
+import React from "react";
+import ResponsiveAppBar from "./Barra";
+import ItemDetailContainer from "./ItemDetailContainer";
+export default function ConNavItm() {
+  return (
+    <div>
+      <ResponsiveAppBar />
+      <ItemDetailContainer />
+    </div>
+  );
+}

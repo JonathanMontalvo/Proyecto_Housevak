@@ -1,12 +1,12 @@
 import React from "react";
 import ResponsiveAppBar from "./Barra";
-import ItemListContainer from "./ItemListContainer";
+import Nosotros from "./Nosotros";
 
-export default function ConNav() {
+export default function ConNavNosotros() {
   return (
     <div>
       <ResponsiveAppBar />
-      <ItemListContainer />
+      <Nosotros />
     </div>
   );
 }

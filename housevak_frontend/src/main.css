@@ -80,8 +80,8 @@
 }
 .inmueble .ver-mas {
     text-decoration: none;
-    background-color: rgb(94, 94, 95);
-    color: rgba(255, 255, 41, 0.658);
+    background-color: rgb(190, 190, 201);
+    color: rgba(0, 0, 0, 0.658);
     padding: .5rem;
     width: max-content;
     border-radius: .5rem;
