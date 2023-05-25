@@ -16,6 +16,8 @@ import Usuario from './components/Usuario'
 import Registroo from './components/Registroo'
 import ConNavUs from './components/ConNavUs'
 import ConNavInc from './components/ConNavInc'
+import Agregar from './components/Agregar'
+import Registro2 from './components/Registro2'
 const cam=1;
 function App(){
   return(
@@ -24,7 +26,7 @@ function App(){
     <BrowserRouter>
     
     <Routes>
-    <Route path="/" element={<Escoger/>} />
+    <Route path="/" element={<Registro2/>} />
       <Route path="iniciosesion/inicio/Catelog" element={<ConNav/>} />
       <Route path="iniciosesion/inicio" element={<ConNavInc/>} />
       <Route path="iniciosesion/inicio/perfil" element={<ConNavUs/>} />
