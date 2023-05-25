@@ -17,7 +17,7 @@ const ItemDetail = ({ item }) => {
   };
 
   const handleEmailClick = () => {
-    const recipient = "l20281438@toluca.tecnm.mx"; // Correo electrónico del destinatario
+    const recipient = "l20281438@toluca.tecnm.mx"; // Correo electrónico
     const subject = "Consulta sobre el inmueble"; // Asunto del correo electrónico
     const body = `Hola, estoy interesado en el inmueble "${item.title}". ¿Podrías brindarme más información al respecto?`; // Cuerpo del correo electrónico
     const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${recipient}&su=${encodeURIComponent(
