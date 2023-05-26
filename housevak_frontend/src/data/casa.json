@@ -1,0 +1,52 @@
+{
+    "inmuebles":[
+        {
+            "id":1,
+            "nombre":"Villa Serenidad",
+            "direccion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15066.29591074641!2d-99.58812743425365!3d19.257389989755684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b100600c98d%3A0x50062df6247fdfb3!2sTecNM%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Toluca!5e0!3m2!1ses-419!2smx!4v1685025999305!5m2!1ses-419!2smx",
+            "precio":29859834,
+            "imagen":"https://cdn5.dibujos.net/dibujos/pintados/202040/casita-de-campo-edificios-casas-12018205.jpg",
+            "video":"https://www.youtube.com/watch?v=oLwmce0oHUk"
+        },
+        {
+            "id":2,
+            "nombre":"Moderna e segura",
+            "direccion":"",
+            "precio":438325674,
+            "imagen":"https://img10.naventcdn.com/avisos/18/00/64/57/85/31/720x532/325323049.jpg",
+            "video":"https://www.youtube.com/watch?v=gGKwMMALLLI"
+        },
+        {
+            "id":3,
+            "nombre":"Rincón del Paraíso",
+            "direccion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15066.29591074641!2d-99.58812743425365!3d19.257389989755684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b100600c98d%3A0x50062df6247fdfb3!2sTecNM%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Toluca!5e0!3m2!1ses-419!2smx!4v1685025999305!5m2!1ses-419!2smx",
+            "precio":6733514,
+            "imagen":"https://i.pinimg.com/originals/7b/bd/b7/7bbdb7f93d11bbcf81633ecfa725d402.jpg",
+            "video":"https://www.youtube.com/watch?v=BBKR5TkR_ec"
+        },
+        {
+            "id":4,
+            "nombre":"Hacienda Esperanza",
+            "direccion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15066.29591074641!2d-99.58812743425365!3d19.257389989755684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b100600c98d%3A0x50062df6247fdfb3!2sTecNM%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Toluca!5e0!3m2!1ses-419!2smx!4v1685025999305!5m2!1ses-419!2smx",
+            "precio":2986734,
+            "imagen":"https://definicion.de/wp-content/uploads/2011/01/casa-1.jpg",
+            "video":"https://www.youtube.com/watch?v=QmfVLaBan5I"
+        },
+        {
+            "id":5,
+            "nombre":"Manor Élegance",
+            "direccion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15066.29591074641!2d-99.58812743425365!3d19.257389989755684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b100600c98d%3A0x50062df6247fdfb3!2sTecNM%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Toluca!5e0!3m2!1ses-419!2smx!4v1685025999305!5m2!1ses-419!2smx",
+            "precio":43456834,
+            "imagen":"https://i.redd.it/leoihj2ud0841.jpg",
+            "video":"https://www.youtube.com/watch?v=LD0inr69HEU"
+        },
+        {
+            "id":6,
+            "nombre":"Residencia Bella Luna",
+            "direccion":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15066.29591074641!2d-99.58812743425365!3d19.257389989755684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b100600c98d%3A0x50062df6247fdfb3!2sTecNM%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Toluca!5e0!3m2!1ses-419!2smx!4v1685025999305!5m2!1ses-419!2smx",
+            "precio":6234734,
+            "imagen":"https://www.bhg.com/thmb/3Vf9GXp3T-adDlU6tKpTbb-AEyE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg",
+            "video":"https://www.youtube.com/watch?v=XdNWoln_Y2g"
+        }
+    ]
+}

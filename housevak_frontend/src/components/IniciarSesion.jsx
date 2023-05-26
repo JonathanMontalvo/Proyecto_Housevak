@@ -14,11 +14,21 @@ const IniciarSesion = () => {
   const errorEmail = validateEm(email);
   const errorPas = validatePas(password);
   return (
-    <>
-      <div className="conteiner2">
-        <h1>Inicio Sesion</h1>
-      </div>
-      <div className="conteiner">
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "500px",
+      }}
+    >
+      <div
+        className="conteiner"
+        style={{
+          marginTop: "-50px",
+          marginLeft: "10px",
+        }}
+      >
         <Box
           onSubmit={(ev) => {
             ev.preventDefault();
@@ -26,11 +36,23 @@ const IniciarSesion = () => {
           }}
           component="form"
           sx={{
-            "& .MuiTextField-root": { m: 1, width: "25ch" },
+            "& .MuiTextField-root": { m: 1, width: "45ch" },
           }}
           noValidate
           autoComplete="off"
         >
+          <div
+            style={{
+              width: "200px",
+              fontWeight: "bold",
+              fontFamily: "Arial, sans-serif",
+              fontSize: "2rem",
+              marginTop: "-100px",
+              marginLeft: "110px",
+            }}
+          >
+            Inicio Sesión
+          </div>
           <div>
             <TextField
               id="outlined-basic"
@@ -40,7 +62,6 @@ const IniciarSesion = () => {
               value={user}
               onChange={(ev) => setUser(ev.target.value)}
             />
-            <p>{errorUsuario}</p>
           </div>
           <div>
             <TextField
@@ -53,7 +74,6 @@ const IniciarSesion = () => {
               onChange={(ev) => setEmail(ev.target.value)}
             />
           </div>
-          <p>{errorEmail}</p>
           <div>
             <TextField
               id="outlined-basic"
@@ -64,19 +84,18 @@ const IniciarSesion = () => {
               value={password}
               onChange={(ev) => setPassword(ev.target.value)}
             />
-            <p>{errorPas}</p>
           </div>
           <Button
             type="submit"
             variant="contained"
             disabled={errorMessage}
-            sx={{ mt: 2 }}
+            sx={{ mt: 3 }}
           >
-            <Link to="Inicio">Ingresar</Link>
+            <Link to="/usuario/inicio">Ingresar</Link>
           </Button>
         </Box>
       </div>
-    </>
+    </div>
   );
 };
 const login = (user, email, password) => {
@@ -85,7 +104,7 @@ const login = (user, email, password) => {
     email === "L20280711@TOLUCA.TECNM.MX" &&
     password === "1q2W3E4R5t6"
   )
-    <Link to="/Inicio"></Link>;
+    <Link to="/usuario/inicio"></Link>;
   else alert("Login incorrecto");
 };
 const validate = (user, email, password) => {

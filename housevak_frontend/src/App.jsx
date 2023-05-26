@@ -11,14 +11,19 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import IniciarSesion from "./components/IniciarSesion";
 import "./main.css";
 import ConNav from "./components/ConNav";
-import ConNav2 from "./components/ConNavItm";
+import ConNavUsuarios from "./components/ConNavUsuarios";
+import ConNavItm from "./components/ConNavItm";
+import ConNavItmUsuarios from "./components/ConNavItmUsuarios";
 import Usuario from "./components/Usuario";
 import Registroo from "./components/Registroo";
 import ConNavUs from "./components/ConNavUs";
 import ConNavInc from "./components/ConNavInc";
+import ConNavIncUsuarios from "./components/ConNavIncUsuarios";
 import Agregar from "./components/Agregar";
 import Registro2 from "./components/Registro2";
 import ConNavNosotros from "./components/ConNavNosotros";
+import ConNavNosotrosUsuarios from "./components/ConNavNosotrosUsuarios";
+
 const cam = 1;
 function App() {
   return (
@@ -26,22 +31,22 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Registro2 />} />
-          <Route path="iniciosesion/inicio/Catelog" element={<ConNav />} />
-          <Route path="iniciosesion/inicio" element={<ConNavInc />} />
-          <Route path="iniciosesion/inicio/perfil" element={<ConNavUs />} />
-          <Route path="Registro/Catelog" element={<ConNav />} />
-          <Route path="Registro/Inicio" element={<ConNavInc />} />
-          <Route path="/Usuario" element={<Usuario />} />
-          <Route path="/iniciosesion" element={<IniciarSesion />} />
-          <Route path="/Registro" element={<Registroo />} />
-          <Route path="/Catalogo" element={<Cards />} />
-          <Route path="/item/:id" element={<ConNav2 />} />
-          <Route path="/item/:id" element={<ConNav2 />} />
-          <Route path="/Nosotros" element={<ConNavNosotros />} />
+          <Route path="/invitado/inicio" element={<ConNavInc />} />
+          <Route path="/usuario/inicio" element={<ConNavIncUsuarios />} />
+          <Route path="/invitado/nosotros" element={<ConNavNosotros />} />
           <Route
-            path="iniciosesion/inicio/Catelog/:categoria"
-            element={<ConNav />}
+            path="/usuario/nosotros"
+            element={<ConNavNosotrosUsuarios />}
           />
+          <Route path="catalogo/item/:id" element={<ConNavItm />} />
+          <Route path="catalogo/item/:id" element={<ConNavItmUsuarios />} />
+          <Route path="/invitado/catalogo/:categoria" element={<ConNav />} />
+          <Route
+            path="/usuario/catalogo/:categoria"
+            element={<ConNavUsuarios />}
+          />
+          <Route path="/invitado/iniciosesion" element={<IniciarSesion />} />
+          <Route path="/invitado/registro" element={<Registroo />} />
         </Routes>
       </BrowserRouter>
     </div>

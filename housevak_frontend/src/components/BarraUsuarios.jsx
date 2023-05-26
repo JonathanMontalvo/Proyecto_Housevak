@@ -9,14 +9,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import CloseIcon from "@mui/icons-material/Close"; // Importa el ícono de cerrar
 import logo from "../assets/logo.png";
+import IniciarSesion from "./IniciarSesion";
 
 const pages = ["Inicio", "Inmuebles", "Nosotros"];
 const inmueblesOptions = ["Venta", "Renta"];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBarUsuarios() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElInmuebles, setAnchorElInmuebles] = React.useState(null);
+  const [openDialog, setOpenDialog] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -34,6 +37,14 @@ function ResponsiveAppBar() {
     setAnchorElInmuebles(null);
   };
 
+  const handleOpenDialog = () => {
+    setOpenDialog(true);
+  };
+
+  const handleCloseDialog = () => {
+    setOpenDialog(false);
+  };
+
   return (
     <AppBar position="static">
       <Toolbar disableGutters>
@@ -41,7 +52,7 @@ function ResponsiveAppBar() {
           variant="h6"
           noWrap
           component={Link}
-          to="/Nosotros"
+          to="/usuario/nosotros"
           sx={{
             marginLeft: 2,
             marginRight: 0.05,
@@ -98,7 +109,7 @@ function ResponsiveAppBar() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 component={Link}
-                to={page === "Inicio" ? "/iniciosesion/Inicio" : "/Nosotros"}
+                to={page === "Inicio" ? "/usuario/inicio" : "/usuario/nosotros"}
               >
                 <Typography textAlign="center">{page}</Typography>
               </MenuItem>
@@ -110,7 +121,7 @@ function ResponsiveAppBar() {
           variant="h5"
           noWrap
           component={Link}
-          to="/iniciosesion"
+          to="/usuario/nosotros"
           sx={{
             marginRight: 2,
             display: { xs: "flex", md: "none" },
@@ -141,7 +152,9 @@ function ResponsiveAppBar() {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                   component={Link}
-                  to={page === "Inicio" ? "/iniciosesion/Inicio" : "/Nosotros"}
+                  to={
+                    page === "Inicio" ? "/usuario/inicio" : "/usuario/nosotros"
+                  }
                 >
                   {page}
                 </Button>
@@ -171,8 +184,8 @@ function ResponsiveAppBar() {
                 component={Link}
                 to={
                   index === 0
-                    ? "/iniciosesion/inicio/Catelog/Venta"
-                    : "/iniciosesion/inicio/Catelog/Renta"
+                    ? "/usuario/catalogo/venta"
+                    : "/usuario/catalogo/renta"
                 }
               >
                 <Typography textAlign="center">{option}</Typography>
@@ -183,8 +196,9 @@ function ResponsiveAppBar() {
 
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <Button
-            key="Iniciar Sesión"
-            onClick={handleCloseNavMenu}
+            key="Cerrar Sesión"
+            component={Link}
+            to="/invitado/inicio"
             sx={{ my: 2, color: "white", ml: "auto" }}
           >
             Cerrar sesión
@@ -195,4 +209,4 @@ function ResponsiveAppBar() {
   );
 }
 
-export default ResponsiveAppBar;
+export default ResponsiveAppBarUsuarios;

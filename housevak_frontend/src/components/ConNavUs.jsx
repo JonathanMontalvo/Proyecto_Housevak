@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveAppBar from "./Barra";
+import ResponsiveAppBar from "./BarraInvitado";
 import Usuario from "./Usuario";
 
 export default function ConNavUs() {

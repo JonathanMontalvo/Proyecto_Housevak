@@ -1,11 +1,11 @@
 import React from "react";
-import ResponsiveAppBar from "./BarraInvitado";
+import ResponsiveAppBarUsuarios from "./BarraUsuarios";
 import ItemListContainer from "./ItemListContainer";
 
-export default function ConNav() {
+export default function ConNavUsuarios() {
   return (
     <div>
-      <ResponsiveAppBar />
+      <ResponsiveAppBarUsuarios />
       <ItemListContainer />
     </div>
   );

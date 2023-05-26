@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveAppBar from "./Barra";
+import ResponsiveAppBar from "./BarraInvitado";
 import Inicio from "./Inicio";
 export default function ConNavInc() {
   return (

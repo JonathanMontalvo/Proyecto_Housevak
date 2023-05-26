@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+const NavBarUsuarios = () => {
   return (
     <nav className="navbar">
       <Link
-        to="/invitado/inicio"
+        to="/usuario/inicio"
         className="logo"
         style={{
           fontWeight: "bold",
@@ -39,7 +39,7 @@ const NavBar = () => {
         >
           <Link
             className="menu-link"
-            to="/invitado/catalogo/renta"
+            to="/usuario/catalogo/renta"
             style={{
               fontWeight: "bold",
               fontFamily: "Arial, sans-serif",
@@ -58,7 +58,7 @@ const NavBar = () => {
         >
           <Link
             className="menu-link"
-            to="/invitado/catalogo/venta"
+            to="/usuario/catalogo/venta"
             style={{
               fontWeight: "bold",
               fontFamily: "Arial, sans-serif",

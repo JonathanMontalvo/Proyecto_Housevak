@@ -3,7 +3,7 @@ import "./Sesion.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
-function Escoger() {
+function EscogerUsuarios() {
   return (
     <>
       <div className="conteiner2">
@@ -11,14 +11,14 @@ function Escoger() {
       </div>
       <div className="conteiner">
         <div>
-          <Link to="/invitado/inicio">
+          <Link to="/usuario/inicio">
             <Button type="submit" variant="contained" sx={{ mt: 2 }}>
               Ingresar usuario
             </Button>
           </Link>
         </div>
         <div>
-          <Link to="/invitado/registro">
+          <Link to="/usuario/registro">
             <Button type="submit" variant="contained" sx={{ mt: 2 }}>
               Registrar usuario
             </Button>
